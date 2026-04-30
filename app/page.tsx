@@ -5,6 +5,7 @@ import WorkshopForm from "@/components/shared/workshopForm";
 import WorkshopDetailsCard from "@/components/shared/workshopDetailsCard";
 import Info from "@/components/shared/info";
 import Confirmaciones from "@/components/shared/confirmaciones";
+import NavigationBar from "@/components/shared/navigationBar";
 export default function Home() {
   return (
     <div className="bg-white">
@@ -13,6 +14,9 @@ export default function Home() {
         </div>
         <div>
             <Info />
+        </div>
+        <div>
+            <NavigationBar />
         </div>
         <div className="flex flex-row w-fit space-x-4 m-25">
             <WorkshopCard />

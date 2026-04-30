@@ -1,21 +1,23 @@
+
+
 export default function Info(){
     return (
-        <div className="d-inline flex flex-row space-x-4 text-black">
-            <div className=" px-3 py-2 border border-lime-400 rounded-lg bg-input-background w-50 bg-lime-300">
-                <p>Total talleres</p>
-                <p>1</p>
+        <div className="d-inline flex flex-row space-x-4 font-montserrat ">
+            <div className="text-white px-3 py-2 border border-lumara-primary rounded-lg bg-input-background w-50 bg-lumara-quaternary mt-5">
+                <p className="text-lumara-font-green">Total talleres</p>
+                <p className="text-xl font-medium text-lumara-font-green mt-2">6</p>
             </div>
-            <div className=" px-3 py-2 border border-orange-400 rounded-lg bg-input-background w-50 bg-orange-300">
-                <p>Inscritos</p>
-                <p>8</p>
+            <div className="text-white px-3 py-2 border border-lumara-primary rounded-lg bg-input-background w-50 bg-lumara-quaternary mt-5">
+                <p className="text-lumara-font-green ">Talleres activos</p>
+                <p className="text-xl font-medium text-lumara-font-green mt-2 ">4</p>
             </div>
-            <div className=" px-3 py-2 border border-yellow-400 rounded-lg bg-input-background w-50 bg-yellow-300">
-                <p>Pendientes</p>
-                <p>2</p>
+            <div className="text-white px-3 py-2 border border-lumara-primary rounded-lg bg-input-background w-50 bg-lumara-quaternary mt-5">
+                <p className="text-lumara-font-green">Pendientes</p>
+                <p className="text-xl font-medium text-lumara-font-green mt-2 ">2</p>
             </div>
-            <div className=" px-3 py-2 border border-gray-200 rounded-lg bg-input-background w-50 bg-white">
-                <p>Activos</p>
-                <p>3</p>
+            <div className="text-white px-3 py-2 border border-lumara-primary rounded-lg bg-input-background w-50 bg-lumara-quaternary mt-5">
+                <p className="text-lumara-font-green">Total inscritos</p>
+                <p className="text-xl font-medium text-lumara-font-green mt-2 ">70</p>
             </div>
         </div>
     )
