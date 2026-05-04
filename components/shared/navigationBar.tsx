@@ -1,8 +1,10 @@
+import FilterListAltIcon from '@mui/icons-material/FilterListAlt';
 export default function NavigationBar() {
     return (
         <div>
             <div>
                 <form action="">
+                    < FilterListAltIcon />
                     <input type="text" name="nombre "id="nombre" className="px-3 py-2 border border-gray-300 rounded-lg bg-input-background" placeholder="nombre"/>
                     <select name="deporte" id="deporte" className="px-3 py-2 border border-gray-300 rounded-lg bg-input-background">
                         <option value="deporte">deporte</option>

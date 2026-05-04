@@ -1,18 +1,37 @@
+'use client'
+import {useState} from "react";
+import {number} from "prop-types";
+
+export interface workshopFormValues {
+    titulo: string;
+    categoria: string;
+    coordinador: string;
+    horario: string;
+    espacio: string;
+    minimo: number;
+    maximo: number;
+}
+
+
 export default function WorkshopForm() {
+    const [form, setForm] = useState<workshopFormValues>({
+        titulo: ' ',
+        categoria: ' ',
+        coordinador: ' ',
+        horario: ' ',
+        espacio: ' ',
+        minimo: number,
+        maximo: number
+    });
+
     return (
         <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow text-black w-fit">
             <h2 className="text-1xl font-bold text-black">Publicar Nuevo Taller</h2>
             <form action="" className="px-3 py-2 border border-gray-300 rounded-lg bg-input-background w-fit">
                 <label htmlFor="Titulo">Titulo</label>
-                <input className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-input-background" type="text" placeholder="Ej: futbol basico" id="Titulo"/>
-                <label htmlFor="categoria">Categoria</label>
-                <select id="categoria" name="categoria" className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-input-background">
-                    <option value="deporte">deporte</option>
-                    <option value="deporte">deporte</option>
-                    <option value="deporte">deporte</option>
-                    <option value="deporte">deporte</option>
-                    <option value="deporte">deporte</option>
-                </select>
+                <input className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-input-background" type="text" placeholder="Ej: futbol basico" id="Titulo" value={""}/>
+                <label htmlFor="Categoria">Categoria</label>
+                <input className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-input-background" type="text" placeholder="Deporte" id="Categoria"/>
                 <label htmlFor="Coordinador">Profesor Coordinador</label>
                 <input className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-input-background" type="text" placeholder="Nombre del profesor coordinador" id="Coordinador"/>
                 <div className="flex items-center">
@@ -40,7 +59,7 @@ export default function WorkshopForm() {
                         <button className="w-full text-black border border-gray-300 p-2 hover:bg-gray-200 rounded-lg mr-1 transition-colors">cancelar</button>
                     </div>
                     <div className="w-full">
-                        <input type="submit" className="w-full bg-lumara-tertiary border border-lumara-secondary p-2 hover:bg-lumara-secondary-hover rounded-lg transition-colors text-white"/>
+                        <input type="submit" className="w-full bg-lumara-tertiary border border-lumara-secondary p-2 hover:bg-lumara-tertiary-hover rounded-lg transition-colors text-lumara-font"/>
                     </div>
                 </div>
                 </form>

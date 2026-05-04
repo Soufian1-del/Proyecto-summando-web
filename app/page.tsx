@@ -6,6 +6,7 @@ import WorkshopDetailsCard from "@/components/shared/workshopDetailsCard";
 import Info from "@/components/shared/info";
 import Confirmaciones from "@/components/shared/confirmaciones";
 import NavigationBar from "@/components/shared/navigationBar";
+import PageFooter from "@/components/shared/pageFooter";
 export default function Home() {
   return (
     <div className="bg-white">
@@ -33,7 +34,9 @@ export default function Home() {
         <div>
             <Confirmaciones />
         </div>
-
+        <div>
+            <PageFooter />
+        </div>
     </div>
 
   );
