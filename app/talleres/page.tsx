@@ -20,7 +20,7 @@ export default function Talleres() {
       
       </main>
       <div className="bg-gray-100 dark:bg-gray-900">
-          <p className="text-center text-gray-600 dark:text-gray-400 py-4">
+          <p className="text-center text-gray-600 dark:text-gray-400 py-2">
             © 2026 Talleres Escolares. Todos los derechos reservados.
           </p>
       </div>

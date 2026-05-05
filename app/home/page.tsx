@@ -1,16 +1,16 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-export default function Cursos() {
+export default function Home() {
   return (
     <div className="flex flex-col min-h-screen"> 
       <Header />
       
       <main className="flex-1 flex flex-col items-center dark:bg-black pt-20">
-        <h1 className="text-3xl font-bold">Página de Cursos</h1>
+        <h1 className="text-3xl font-bold">Inicio</h1>
 
       <div className="bg-back dark:bg-black pt-28 ">
-          <h3> Cursos Disponibles</h3>
+          <h3> Noticias</h3>
       </div>
 
       
