@@ -1,4 +1,12 @@
-export default function Table(){
+export interface tableValues {
+    nombre: string;
+    curso: string;
+    fecha: string;
+}
+interface tableValuesProps{
+    alumnos: tableValues[];
+}
+export default function Table({alumnos}: tableValuesProps){
     return(
     <div>
         <h3 className="mt-5">Lista de Inscripciones</h3>
@@ -12,11 +20,12 @@ export default function Table(){
                 </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                <tr className="hover:bg-gray-50">
-                    <td className="px-4 py-3 "></td>
-                    <td className="px-4 py-3 "></td>
-                    <td className="px-4 py-3 "></td>
-                </tr>
+                {alumnos.map((alumno) => (
+                <tr key={alumno.nombre} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 ">{alumno.nombre}</td>
+                    <td className="px-4 py-3 ">{alumno.curso}</td>
+                    <td className="px-4 py-3 ">{alumno.fecha}</td>
+                </tr>))}
                 </tbody>
             </table>
         </div>

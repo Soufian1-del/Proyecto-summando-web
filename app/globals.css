@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
 @variant dark (&:is(.dark *));
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
 
+}
 :root {
-  --background: #f9fafb;
+  --background: #ffffff;
   --foreground: #111827;
 }
 
@@ -24,15 +33,14 @@ body {
   --color-lumara-transparent: transparent;
 
   /* Colores marca Lumara */
-  --color-lumara-primary: #1E504F;
+  --color-lumara-primary: #3e7e7d;
   --color-lumara-primary-hover: #153a39;
-  --color-lumara-secondary: #FF4C15;
-  --color-lumara-tertiary: #f6b9a4;
-  --color-lumara-tertiary-hover: #f6a488;
+  --color-lumara-secondary: #ff6c3f;
+  --color-lumara-tertiary: #ff6c3f;
+  --color-lumara-tertiary-hover: #E64413;
   --color-lumara-quaternary: #48aead;
   --color-lumara-secondary-hover: #E64413;
-  --color-lumara-font: #cc5734;
-  --color-lumara-font-green: #234342;
+
   /* Grises modo claro */
   --color-lumara-gray-50: #f9fafb;
   --color-lumara-gray-100: #f3f4f6;
