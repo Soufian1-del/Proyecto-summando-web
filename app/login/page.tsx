@@ -3,9 +3,7 @@ import Link from 'next/link';
 
 export default function Login() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
-      <Header />
-      
+    <div className="flex flex-col min-h-screen bg-gray-50">      
       <main className="flex-1 flex items-center justify-center p-6">
         <div className="w-full max-w-md border border-red-50 text-center">
           
